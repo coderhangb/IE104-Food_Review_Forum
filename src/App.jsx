@@ -4,6 +4,7 @@ import Header from "./components/Header/Header";
 import HomePage from "./pages/HomePage/HomePage";
 import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 import ProfilePage from "./pages/ProfilePage/ProfilePage";
+import ReviewDetailPage from "./pages/ReviewDetailPage/ReviewDetailPage";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -24,6 +25,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/profile" element={<ProfilePage />} />
+          <Route path="/review" element={<ReviewDetailPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </main>
