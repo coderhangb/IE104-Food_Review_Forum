@@ -1,0 +1,64 @@
+.page {
+    padding: 22px 0 12px;
+}
+
+.backLink {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--color-ink-soft);
+    font-size: 0.72rem;
+    font-weight: 600;
+    transition: color 150ms ease;
+}
+
+.backLink:hover {
+    color: var(--color-primary);
+}
+
+.pageHeader {
+    max-width: 720px;
+    margin: 20px 0 28px;
+}
+
+.pageHeader h1 {
+    margin: 9px 0 12px;
+    font-family: var(--font-display);
+    font-size: clamp(2.3rem, 4.5vw, 3.4rem);
+    font-weight: 600;
+    line-height: 1.08;
+    letter-spacing: -0.045em;
+}
+
+.pageHeader h1 em {
+    color: var(--color-primary);
+    font-style: italic;
+    background: linear-gradient(
+        transparent 64%,
+        rgba(242, 166, 90, 0.36) 64%,
+        rgba(242, 166, 90, 0.36) 82%,
+        transparent 82%
+    );
+}
+
+.pageHeader p {
+    max-width: 590px;
+    color: var(--color-ink-soft);
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+
+
+.layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 350px;
+    align-items: start;
+    gap: 24px;
+}
+
+.formColumn {
+    display: grid;
+    gap: 16px;
+    min-width: 0;
+}
